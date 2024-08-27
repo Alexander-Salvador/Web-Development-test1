@@ -7,7 +7,7 @@
 
     /* COLORS */
     --bgcolor-0: #171c26;
-    --primary-color: #5eb9f0;
+    --btn-color: #5eb9f0;
     --paragraph-color: #60697b;
     --heading-color: #343f52;
     --skyblue: #e5f45d;
@@ -17,12 +17,19 @@
     /* 5rem = 8px  |  1rem = 16px */
     --ffamily-main: "Urbanist", sans-serif;
     --ffamily-secundary: "Urbanist";
-    --fontsize-main: .938rem;
-    --fontsize-secundary: 1.2em;
+    --fontsize-h2: 42px;
+    --fontsize-h3: 23px;
+    --fontsize-paragraph: 17px;
 
     /* FONT WEIGHT */
-    --fontweight-r: 400;
-    --fontweight-sb: 600;
+    --fontweight-h2: 700;
+    --fontweight-h3: 600;
+    --fontweight-paragraph: 600;
+
+    /* LINE HEIGHT */
+    --line-h2: 50px;
+    --line-h3: 32px;
+    --line-paragraph: 29px;
 }
 
     /* BASE CSS */
@@ -32,8 +39,87 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     font-family: var(--ffamily-main);
+}
+
+main {
+    max-width: 1280px ;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,ul {
+    list-style: none;
+}
+            /* HEADING TAGS */
+h2 {
+    color: var(--heading-color);
+    font-size: var(--fontsize-h2);
+    line-height: var(--line-h2);
+    font-weight: var(--fontweight-h2);
+}
+
+h3 {
+    color: var(--heading-color);
+    font-size: var(--fontsize-h3);    
+    line-height: var(--line-h3);
+}
+
+p {
+    color: var(--paragraph-color);
+    font-size: var(--fontsize-paragraph);    
+    line-height: var(--line-paragraph);
+}
+
+                /* BUTTON STYLES */
+.btn-primary {
+    background-color: var(--btn-color);
+    border-radius: 10px;
+    box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 39%);
+    color: var(--white);
+    display: block;
+    padding: 8px 10px;
+    width: fit-content;
+}
+
+
+                /* SERVICES STYLES */
+
+
+.services {
+    & h2 {
+        max-width: 660px;
+        margin: 0 auto 70px;
+        text-align: center;
+    }
+}
+.services-list {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.services-items {
+    text-align: center;
+
+    & h3 {
+        margin-bottom: 15px;
+    }
+
+    & p {
+        
+    }
+
+    & a {
+        color: var(--btn-color);
+        text-decoration: underline;
+    }
+
+    & img {
+        min-height: 230px;
+    }
 }

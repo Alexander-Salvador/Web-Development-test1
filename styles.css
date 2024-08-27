@@ -1,0 +1,39 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+    /* VARIABLES CSS */
+:root {
+    --header-height: 3.5rem;
+
+    /* COLORS */
+    --bgcolor-0: #171c26;
+    --primary-color: #5eb9f0;
+    --paragraph-color: #60697b;
+    --heading-color: #343f52;
+    --skyblue: #e5f45d;
+    --white: #fff;
+
+    /* FONT & TIPOGRAPHY */
+    /* 5rem = 8px  |  1rem = 16px */
+    --ffamily-main: "Urbanist", sans-serif;
+    --ffamily-secundary: "Urbanist";
+    --fontsize-main: .938rem;
+    --fontsize-secundary: 1.2em;
+
+    /* FONT WEIGHT */
+    --fontweight-r: 400;
+    --fontweight-sb: 600;
+}
+
+    /* BASE CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: var(--ffamily-main);
+}

@@ -1,0 +1,31 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    /* VARIABLES CSS */
+:root {
+    --header-height: 3.5rem;
+
+    /* COLORS */
+    --bgcolor-0: #171c26;
+    --color-1: #1d232f;
+    --color-2: #252b37;
+    --color-3: #f5f5f5;
+
+    /* FONT & TIPOGRAPHY */
+    /* 5rem = 8px  |  1rem = 16px */
+    --ffamily-main: "monserrat", sans-serif;
+    --ffamily-secundary: "monserrat";
+    --fontsize-main: .938rem;
+    --fontsize-secundary: 1.2em;
+
+    /* FONT WEIGHT */
+    --fontweight-r: 400;
+    --fontweight-sb: 600;
+}
+
+    /* BASE CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

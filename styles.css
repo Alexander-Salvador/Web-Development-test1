@@ -18,6 +18,7 @@
     /* 5rem = 8px  |  1rem = 16px */
     --ffamily-main: "Urbanist", sans-serif;
     --ffamily-secundary: "Urbanist";
+    --fontsize-h1: 54px;
     --fontsize-h2: 42px;
     --fontsize-h3: 23px;
     --fontsize-h4: 15px;
@@ -31,6 +32,7 @@
     --fontweight-paragraph: 600;
 
     /* LINE HEIGHT */
+    --line-h1: 50px;
     --line-h2: 50px;
     --line-h3: 32px;
     --line-paragraph: 29px;
@@ -60,6 +62,13 @@ ol,ul {
     list-style: none;
 }
             /* HEADING TAGS */
+
+h1 {
+    color: var(--heading-color);
+    font-size: var(--fontsize-h1);
+    line-height: var(--line-h1);
+}
+
 h2 {
     color: var(--heading-color);
     font-size: var(--fontsize-h2);
@@ -87,36 +96,110 @@ p {
                 /* BUTTON STYLES */
 .btn-primary {
     background-color: var(--btn-color);
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 39%);
     color: var(--white);
     display: block;
-    padding: 8px 10px;
+    padding: 16px;
     width: fit-content;
 }
 
                 /* NAVBAR STYLES */
 
 .header {
-    width: 100%;
-    height: 100%;
+    width: inherit;
+    /* height: 100%; */
 }
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 30px;
+    justify-content: space-between;
+    padding: 30px 170px;
+    margin: 0 auto;
 }
 
 .ul_list {
     display: flex;
+    align-items: center;
     gap: 1.5em;
 
     & a {
     color: var(--heading-color);
     font-weight: var(--fontweight-a);
     }
+
+    & .btn-primary {
+        color: var(--white);
+        border-radius: 18px;
+        padding: 10px 12px;
+    }
 }
+
+                /* HERO STYLES */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px 40px 50px;
+
+    & H1 {
+        max-width: 405px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        line-height: 60px;
+
+        & span {
+            color: var(--btn-color);
+        }
+    }
+
+    & p {
+        font-size: 22px;
+        margin-bottom: 20px;
+        line-height: 34px;
+    }
+}
+
+.hero_image {
+    width: 600px;
+    /* height: 600px; */
+}
+
+                /* SPONSORS STYLES */
+.sponsors {
+    height: 30px;
+    text-align: center;
+    padding-bottom: 90px;
+    /* margin-bottom: 0px; */
+
+    & h4 {
+        margin-bottom: 50px;
+        color: var(--paragraph-color);
+    }
+}
+.sponsor_nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sponsors_list {
+    display: flex;
+    align-items: center;
+    margin: 0 40px 0 40px;
+    gap: 20px;
+
+}
+.sponsors_items {
+}
+
+.sponsors_img {
+    max-width: 100%;
+    /* height: 20px; */
+}
+
+
 
 
                 /* SERVICES STYLES */

@@ -488,16 +488,21 @@ p {
 .faqs_questions {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
+    /* justify-items: start; */
     /* justify-items: center; */
     /* justify-content: space-around; */
     /* align-items: center; */
 }
 
 .faqs-details {
-    /* display: flex; */
-    /* gap: 40px; */
+    & summary::marker {
+        background-color: white;
+        color: var(--btn-color);
+    }
     
 }
 .faqs-summary {
+    font-size: 18px;
+    font-weight: 600;
 }

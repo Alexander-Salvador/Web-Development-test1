@@ -10,7 +10,7 @@
     --btn-color: #5eb9f0;
     --paragraph-color: #60697b;
     --heading-color: #343f52;
-    --skyblue: #e5f45d;
+    --skyblue: #e5f4fd;
     --white: #fff;
     --light-gray: #f0f8fe;
 
@@ -26,6 +26,7 @@
 
     /* FONT WEIGHT */
     --fontweight-a: 600;
+    --fontweight-h1: 600;
     --fontweight-h2: 700;
     --fontweight-h3: 600;
     --fontweight-h4: 600;
@@ -36,6 +37,9 @@
     --line-h2: 50px;
     --line-h3: 32px;
     --line-paragraph: 29px;
+
+    /*PADDING SECTION */
+    --padding-primary: 50px 100px;
 }
 
     /* BASE CSS */
@@ -47,6 +51,7 @@
 
 body {
     font-family: var(--ffamily-main);
+    background-color: var(--light-gray);
 }
 
 main {
@@ -70,6 +75,7 @@ ol,ul {
 
 h1 {
     color: var(--heading-color);
+    font-weight: var(--fontweight-h1);
     font-size: var(--fontsize-h1);
     line-height: var(--line-h1);
 }
@@ -141,7 +147,7 @@ p {
 
                 /* HERO STYLES */
 .hero {
-    padding: 40px 0;
+    padding: var(--padding-primary);
 
     & H1 {
         max-width: 405px;
@@ -174,7 +180,7 @@ p {
 .sponsors {
     height: 30px;
     text-align: center;
-    padding-bottom: 200px;
+    /* padding: var(--padding-primary); */
 
     & h4 {
         text-align: center;
@@ -218,7 +224,7 @@ p {
                 /* SERVICES STYLES */
 .services {
     background-color: var(--light-gray);
-    /* padding: 50px; */
+    padding: var(--padding-primary);
     & h2 {
         max-width: 660px;
         margin: 0 auto 70px;
@@ -261,37 +267,139 @@ p {
 }
                 /* STRATEGY STYLES */   
 .strategy {
-
+    padding: var(--padding-primary);
 }
 .strategy-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    /* grid-template-rows: ; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-
+    align-items: center;
+    
 }
+
 .strategy-left {
-
+    & h2 {
+        margin-bottom: 20px;
+    }
+    & h4 {
+        margin-bottom: 10px;
+        color: var(--btn-color);
+        text-transform: uppercase;
+    }
+    & p {
+        margin-bottom: 20px;
+    }
+    & a {
+        /* color: var(--btn-color);
+        text-decoration: underline; */
+    }
 }
+
+
 .strategy-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.strategy-cards {
+    background-color: var(--white);
+    box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 39%);
+    padding: 20px;
 
+    &:nth-child(2){
+        position: relative;
+        left: 40px;
+    }
+    &:nth-child(3){
+        position: relative;
+        left: 10px;
+    }
+
+    & .order {
+        background-color: var(--skyblue);
+        border-radius: 50%;
+        font-size: 22px;
+        padding: 10px 12px;
+        width: fit-content;
+        font-weight: 600;
+        color: var(--btn-color);
+    } 
+}
+                /* TEAM STYLES */
+.team {
+    padding: var(--padding-primary);
 }
 
-.cards {
+.team-container {
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    gap: 20px;
 
 }
-.order {
+.team-article {
+    & h4 {
+        margin-bottom: 10px;
+        color: var(--btn-color);
+        text-transform: uppercase;
+    }
+}
+
+.ul-stadistics {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
 
 }
-                
+.item-stadistics {
+    text-align: center;
+    & h3 {
+        font-size: 35px;
+        font-weight: var(--fontweight-paragraph);
+        padding-bottom: 10px;
+    }
+}
+
+/* TEAM DESCRIPTION */
+.team-description {
+    display: grid;
+    /* align-content: center; */
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+
+}
+.team-list {
+    padding: 0 20px;
+    height: 20rem;
+    width: 30px%;
+    box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 39%);
+    & img {
+        padding-bottom: 10px;
+    }
+    & h3 {
+        padding-bottom: 10px;
+        & + span {
+            color: #aab0bc;
+            text-transform: uppercase;
+        }
+    }
+    & p {
+        padding: 10px 0 10px;
+    }
+    & .svg1 {
+        padding-bottom: 20px;
+    }
+}
 
 
                 /* TESTIMONIALS STYLES */       
 .testimonials {
     background-color: var(--light-gray);
-    padding: 50px;
+    padding: var(--padding-primary);
     & h2 {
         max-width: 670px;
         margin: 0 auto 70px;
@@ -354,4 +462,42 @@ p {
 }
 .testimonials_description {
 
+}
+
+            /* FAQS STYLES */
+.faqs {
+    padding: var(--padding-primary);
+}
+.faqs_container {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    align-items: center;
+    justify-items: start;
+}
+.faqs-info {
+    /* gap: 90px; */
+    & h4 {
+        color: var(--btn-color);
+        text-transform: uppercase;
+    }
+    
+}
+
+.faqs_questions {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* justify-items: center; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+
+.faqs-details {
+    /* display: flex; */
+    /* gap: 40px; */
+    
+}
+.faqs-summary {
 }

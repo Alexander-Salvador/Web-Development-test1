@@ -50,7 +50,12 @@ body {
 }
 
 main {
-    max-width: 1280px ;
+    /* max-width: 1280px ;
+    margin: 0 auto; */
+}
+
+.container {
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -93,6 +98,8 @@ p {
     line-height: var(--line-paragraph);
 }
 
+                /* DESKTOP FISRT */
+
                 /* BUTTON STYLES */
 .btn-primary {
     background-color: var(--btn-color);
@@ -107,15 +114,12 @@ p {
                 /* NAVBAR STYLES */
 
 .header {
-    width: inherit;
-    /* height: 100%; */
+    padding: 30px 0;    
 }
-.navbar {
+.navbar-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 170px;
-    margin: 0 auto;
 }
 
 .ul_list {
@@ -137,10 +141,7 @@ p {
 
                 /* HERO STYLES */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 50px 40px 50px;
+    padding: 40px 0;
 
     & H1 {
         max-width: 405px;
@@ -160,28 +161,33 @@ p {
     }
 }
 
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .hero_image {
-    width: 600px;
-    /* height: 600px; */
 }
 
                 /* SPONSORS STYLES */
 .sponsors {
     height: 30px;
     text-align: center;
-    padding-bottom: 90px;
-    /* margin-bottom: 0px; */
+    padding-bottom: 200px;
 
     & h4 {
+        text-align: center;
         margin-bottom: 50px;
         color: var(--paragraph-color);
     }
 }
+
 .sponsor_nav {
-    display: flex;
+    /* display: flex;
     height: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
 }
 
 .sponsors_list {
@@ -189,6 +195,7 @@ p {
     align-items: center;
     margin: 0 40px 0 40px;
     gap: 20px;
+    /* padding-bottom: 100px; */
 
 }
 .sponsors_items {
@@ -199,13 +206,19 @@ p {
     /* height: 20px; */
 }
 
+.sponsors-container {
+    /* padding-bottom: 100px;
+
+    margin-bottom: 100px; */
+
+}
 
 
 
                 /* SERVICES STYLES */
 .services {
     background-color: var(--light-gray);
-    padding: 50px;
+    /* padding: 50px; */
     & h2 {
         max-width: 660px;
         margin: 0 auto 70px;
@@ -219,6 +232,7 @@ p {
         text-transform: uppercase;
     }
 }
+
 .services-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -245,6 +259,35 @@ p {
         min-height: 230px;
     }
 }
+                /* STRATEGY STYLES */   
+.strategy {
+
+}
+.strategy-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    /* grid-template-rows: ; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+
+}
+.strategy-left {
+
+}
+.strategy-right {
+
+}
+
+.cards {
+
+}
+.order {
+
+}
+                
+
+
                 /* TESTIMONIALS STYLES */       
 .testimonials {
     background-color: var(--light-gray);

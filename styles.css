@@ -112,6 +112,7 @@ p {
     border-radius: 25px;
     box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 39%);
     color: var(--white);
+    height: fit-content;
     display: block;
     padding: 16px;
     width: fit-content;
@@ -505,4 +506,39 @@ p {
 .faqs-summary {
     font-size: 18px;
     font-weight: 600;
+}
+
+
+
+            /* FOOTER STYLES */
+footer {
+    padding: var(--padding-primary);
+    background-color: var(--heading-color);
+    & h2 {
+        color: var(--white);
+    }
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    & .btn-primary {
+        justify-self: center;
+    }
+}
+
+            /* PROJECTS STYLES */
+.projects{
+    padding: var(--padding-primary);
+    & h2{
+        margin: 0 auto 50px;
+        max-width: 780px;
+        text-align: center;
+    }
+}
+
+.projects_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }

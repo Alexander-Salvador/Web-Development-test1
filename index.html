@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,17 +11,21 @@
     <!-- HEADER -->
     <header class="header">
       <nav class="container navbar-container">
-        <img src="images/logo.png" alt="logotipo Sandbox" class="logo" />
-        <ul class="ul_list">
-          <li class="li_items"><a href="#" class="a_links">Demos</a></li>
-          <li class="li_items"><a href="#" class="a_links">pages</a></li>
-          <li class="li_items"><a href="#" class="a_links">Projects</a></li>
-          <li class="li_items"><a href="#" class="a_links">Blog</a></li>
-          <li class="li_items"><a href="#" class="a_links">Blocks</a></li>
-          <li class="li_items">
-            <a href="#" class="a_links">Documentation</a>
-          </li>
-          <li class="li_items"><a href="#" class="btn-primary">Contact</a></li>
+        <img src="Assets/images/logo.png" alt="logotipo de Sandbox" class="navbar-logo" />
+        <label for="menu-hamburguesa" class="label-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="label-svg-menu" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </label>
+        <input type="checkbox" class="menu-hamburguesa" id="menu-hamburguesa">
+        <ul class="navbar-list">
+          <li class="navbar-items"><a href="#" class="navbar-links">Demos</a></li>
+          <li class="navbar-items"><a href="#" class="navbar-links">pages</a></li>
+          <li class="navbar-items"><a href="#" class="navbar-links">Projects</a></li>
+          <li class="navbar-items"><a href="#" class="navbar-links">Blog</a></li>
+          <li class="navbar-items"><a href="#" class="navbar-links">Blocks</a></li>
+          <li class="navbar-items"><a href="#" class="navbar-links">Documentation</a></li>
+          <li class="navbar-items"><a href="#" class="btn-primary">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -29,16 +33,16 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <article class="hero_left">
+          <div class="hero-left">
             <h1>A digital agency specializing on <span>mobile design</span></h1>
             <p>
               we are and award winning desing agency that strongly believe in
               the power of creative ideas
             </p>
             <a href="#" class="btn-primary">Get Started</a>
-          </article>
-          <div class="hero_right">
-            <img class="hero_image" src="images/hero.svg" alt="hero_image" />
+          </div>
+          <div class="hero-right">
+            <img class="hero-image" src="Assets/images/hero.svg" alt="Illustration of mobile design" />
           </div>
         </div>
       </section>
@@ -77,14 +81,16 @@
 
       <!-- SECTION SERVICES -->
       <section class="services">
-        <div class="container">
-          <h4>what we do?</h4>
-          <h2>
-            The services we offer is specifically designed to meet your needs
-          </h2>
-          <article class="services-list">
-            <div class="services-items">
-              <img src="images/services/service1.png" alt="" />
+        <div class="container services-container">
+          <header class="services-caption">
+            <h4>what we do?</h4>
+            <h2>
+              The services we offer is specifically designed to meet your needs
+            </h2>
+          </header>
+          <div class="services-list">
+            <article class="services-item">
+              <img src="Assets/images/services/service1.png" alt="" />
               <h3>Web design</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -93,9 +99,9 @@
                 officiis voluptatibus deserunt.
               </p>
               <a href="#">Learn more</a>
-            </div>
-            <div class="services-items">
-              <img src="images/services/service2.png" alt="" />
+            </article>
+            <article class="services-item">
+              <img src="Assets/images/services/service2.png" alt="" />
               <h3>Web design</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -104,9 +110,9 @@
                 officiis voluptatibus deserunt.
               </p>
               <a href="#">Learn more</a>
-            </div>
-            <div class="services-items">
-              <img src="images/services/service3.png" alt="" />
+            </article>
+            <article class="services-item">
+              <img src="Assets/images/services/service3.png" alt="" />
               <h3>Web design</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -115,15 +121,15 @@
                 officiis voluptatibus deserunt.
               </p>
               <a href="#">Learn more</a>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
-      <!-- SECTION STRATEGY -->
 
+      <!-- SECTION STRATEGY -->
       <section class="strategy">
         <div class="container strategy-container">
-          <article class="strategy-left">
+          <div class="strategy-left">
             <h4>OUR STRATEGY</h4>
             <h2>Here are 3 working steps to organize our projects</h2>
             <p>
@@ -133,19 +139,19 @@
               nulla totam velit dicta perspiciatis.
             </p>
             <a class="btn-primary" href="#">Learn more</a>
-          </article>
+          </div>
           <div class="strategy-right">
-            <div class="strategy-cards">
+            <div class="strategy-card">
               <div class="order">1</div>
               <h3>Collect Ideas</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
             </div>
-            <div class="strategy-cards">
+            <div class="strategy-card">
               <div class="order">2</div>
               <h3>Collect Ideas</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
             </div>
-            <div class="strategy-cards">
+            <div class="strategy-card">
               <div class="order">3</div>
               <h3>Collect Ideas</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
@@ -158,30 +164,32 @@
       <section class="team">
         <div class="container team-container">
           <article class="team-article">
-            <h4>Company Facts</h4>
-            <h2>We are proud of our design team</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            <header class="team-header">
+              <h4>Company Facts</h4>
+              <h2>We are proud of our design team</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </header>
           </article>
           <ul class="ul-stadistics">
             <li class="item-stadistics">
-              <img src="images/icons/check.svg" alt="" class="item" />
+              <img src="Assets/images/icons/check.svg" alt="" class="icon-stadistic" />
               <h3>1000+</h3>
               <p>Complete Projects</p>
             </li>
             <li class="item-stadistics">
-              <img src="images/icons/trophy.svg" alt="" class="item" />
+              <img src="Assets/images/icons/trophy.svg" alt="" class="icon-stadistic" />
               <h3>500+</h3>
               <p>Happy Customers</p>
             </li>
             <li class="item-stadistics">
-              <img src="images/icons/user.svg" alt="" class="item" />
+              <img src="Assets/images/icons/user.svg" alt="" class="icon-stadistic" />
               <h3>20+</h3>
               <p>Awards Won</p>
             </li>
           </ul>
           <div class="team-description">
             <div class="team-list">
-              <img src="images/team/te1.jpg" alt="" />
+              <img src="Assets/images/team/te1.jpg" alt="" />
               <h3>Corris Ambely</h3>
               <span>Financial Analyst</span>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -196,7 +204,7 @@
               </svg> </a>
             </div>
             <div class="team-list">
-              <img src="images/team/te2.jpg" alt="" />
+              <img src="Assets/images/team/te2.jpg" alt="" />
               <h3>Cory Samora</h3>
               <span>Marketing Specialist</span>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -211,7 +219,7 @@
               </svg> </a>
             </div>
             <div class="team-list">
-              <img src="images/team/te3.jpg" alt="" />
+              <img src="Assets/images/team/te3.jpg" alt="" />
               <h3>Nikolas Brofter</h3>
               <span>Sales Manager</span>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -226,7 +234,7 @@
               </svg> </a>
             </div>
             <div class="team-list">
-              <img src="images/team/te4.jpg" alt="" />
+              <img src="Assets/images/team/te4.jpg" alt="" />
               <h3>Natali Portman</h3>
               <span>Investment Planner</span>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -246,24 +254,27 @@
 
       <!-- SECTION PROJECTS -->
       <section class="projects">
-        <h4>Lasted Projects</h4>
-        <h2>
-          Check out some of our awesome projects with creative ideas and great
-          design
-        <div class="container projects_container">
-        </h2>
-        <div class="project">
-          <img src="images/projects/project1.jpg" alt="" />
-          <h3>NAME PROJECT</h3>
-          <p>Categoria</p>
-        </div>
-        <div class="project">
-          <img src="images/projects/project2.jpg" alt="" />
-          <h3>NAME PROJECT</h3>
-          <p>Categoria</p>
+        <header class="project-header">
+          <h4>Lasted Projects</h4>
+          <h2>
+            Check out some of our awesome projects with creative ideas and great
+            design
+          </h2>
+        </header>
+        <div class="container projects-container">
+          <div class="project-name">
+            <img src="Assets/images/projects/project1.jpg" alt="" />
+            <h3>NAME PROJECT</h3>
+            <p>Categoria</p>
+          </div>
+          <div class="project-name">
+            <img src="Assets/images/projects/project2.jpg" alt="" />
+            <h3>NAME PROJECT</h3>
+            <p>Categoria</p>
+          </div>
         </div>
       </section>
-        </div>
+        
     
       <!-- SECTION TESTIMONIALS -->
       <section class="testimonials">
@@ -272,6 +283,7 @@
           <h2>Dont take our word for it. See what customers saying about us</h2>
           <article class="testimonials_team">
             <ul class="testimonials_list">
+
               <l1 class="testimonials_items">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id,
@@ -279,7 +291,7 @@
                 </p>
                 <div class="testimonials_group">
                   <div class="testimonials_author">
-                    <img src="images/team/te1.jpg" alt="" />
+                    <img src="Assets/images/team/te1.jpg" alt="" />
                   </div>
                   <div class="testimonials_description">
                     <h4>Coriss Ambady</h4>
@@ -295,7 +307,7 @@
                 </p>
                 <div class="testimonials_group">
                   <div class="testimonials_author">
-                    <img src="images/team/te1.jpg" alt="" />
+                    <img src="Assets/images/team/te1.jpg" alt="" />
                   </div>
                   <div class="testimonials_description">
                     <h4>Coriss Ambady</h4>
@@ -311,7 +323,7 @@
                 </p>
                 <div class="testimonials_group">
                   <div class="testimonials_author">
-                    <img src="images/team/te1.jpg" alt="" />
+                    <img src="Assets/images/team/te1.jpg" alt="" />
                   </div>
                   <div class="testimonials_description">
                     <h4>Coriss Ambady</h4>
@@ -327,7 +339,7 @@
                 </p>
                 <div class="testimonials_group">
                   <div class="testimonials_author">
-                    <img src="images/team/te1.jpg" alt="" />
+                    <img src="Assets/images/team/te1.jpg" alt="" />
                   </div>
                   <div class="testimonials_description">
                     <h4>Coriss Ambady</h4>
@@ -343,7 +355,7 @@
                 </p>
                 <div class="testimonials_group">
                   <div class="testimonials_author">
-                    <img src="images/team/te1.jpg" alt="" />
+                    <img src="Assets/images/team/te1.jpg" alt="" />
                   </div>
                   <div class="testimonials_description">
                     <h4>Coriss Ambady</h4>
@@ -359,7 +371,7 @@
                 </p>
                 <div class="testimonials_group">
                   <div class="testimonials_author">
-                    <img src="images/team/te1.jpg" alt="" />
+                    <img src="Assets/images/team/te1.jpg" alt="" />
                   </div>
                   <div class="testimonials_description">
                     <h4>Coriss Ambady</h4>
@@ -371,6 +383,8 @@
           </article>
         </div>
       </section>
+
+      <!-- SECTION FAQS -->
       <section class="faqs">
         <div class="container faqs_container">
           <article class="faqs-info">
@@ -386,6 +400,7 @@
             </p>
             <a class="btn-primary" href="#">All Faqs</a>
           </article>
+
           <nav class="faqs_questions">
             <details class="faqs-details">
               <summary class="faqs-summary">Puedo hacer compras en esta web?</summary>
@@ -418,10 +433,14 @@
         </div>
       </section>
     </main>
+
+    <!-- SECTION FOOTER -->
     <footer>
       <div class="container footer_container">
-        <h2>Join our community by using our services and grow your business</h2>
-        <a class="btn-primary" href="#">Try it for free</a>
+        <header class="footer-header">
+          <h2>All rights reserved © COPYRIGHT - DevBRK.com</h2>
+          <a class="btn-primary" href="#">Try it for free</a>
+        </header>
       </div>
     </footer>
   </body>

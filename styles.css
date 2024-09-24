@@ -763,10 +763,6 @@ p {
   container-type: inline-size;
   container-name: testimonials;
 
-  & h2 {
-    ;
-  }
-
   & h4 {
     text-align: center;
     margin: 15px 15px;
